@@ -161,7 +161,7 @@
 				</dependencies>
 			</plugin>
 		</plugins>
-		<finalName>Inventory-service</finalName>
+		<finalName>inventory-service</finalName>
 	</build>
 
 	<repositories>

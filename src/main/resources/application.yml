@@ -11,7 +11,7 @@ spring:
       max-request-size: 20MB
   data:
     mongodb:
-      uri: ${MONGODB_URL:mongodb+srv://sumesh_spring:sumesh123@cluster0.roe8a.mongodb.net/shopping?retryWrites=true&w=majority}
+      uri: ${MONGODB_URL}
 #        host: localhost
 #        port: 27017
 #        database: ecommerce
