@@ -35,7 +35,7 @@ cloud:
 
 aws:
   s3:
-    bucket: ${AWS_BUCKET_NAME}
+    bucket: ${AWS_BUCKET_NAME:ecommerce-image-bucket1}
 
 allowed:
   origin: ${REACT_APP_URL:http://localhost:3000}
