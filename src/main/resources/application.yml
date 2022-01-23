@@ -1,0 +1,44 @@
+server:
+  port: ${PORT:9003}
+
+spring:
+  application:
+    name: inventory-service
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 2MB
+      max-request-size: 20MB
+  data:
+    mongodb:
+      uri: ${MONGODB_URL:mongodb+srv://sumesh_spring:sumesh123@cluster0.roe8a.mongodb.net/shopping?retryWrites=true&w=majority}
+#        host: localhost
+#        port: 27017
+#        database: ecommerce
+
+eureka:
+  instance:
+    hostname: ${APPDOMAIN:localhost}
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER_URL:http://127.0.0.1:8761/eureka/}
+
+jwt:
+  secret: "asdfghjkikjuhygfrd"
+
+cloud:
+  aws:
+    credentials:
+      access-key: ${AWS_ACCESS_KEY}
+      secret-key: ${AWS_SECRET_KEY}
+    region:
+      static: ${AWS_REGION_STATIC}
+    stack:
+      auto: false
+
+aws:
+  s3:
+    bucket: ${AWS_BUCKET_NAME}
+
+allowed:
+  origin: ${REACT_APP_URL:http://localhost:3000}
