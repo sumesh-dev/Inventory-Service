@@ -17,3 +17,4 @@ phases:
 artifacts:
   files:
     - target/inventory-service.jar
+  discard-paths: yes
